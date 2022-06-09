@@ -4,7 +4,11 @@ export default defineConfig({
   description: "夜空中最亮的星的前端博客 vuejs react webpack 前端工程化",
   themeConfig: {
     logo: "",
-    nav: [{ text: "关于我", link: "/about" }],
+    nav: [
+      { text: "首页", link: "/blog/vuejs" },
+      { text: "组件", link: "/components/index" },
+      { text: "关于我", link: "/about" },
+    ],
     sidebar: {
       "/blog/": [
         {
@@ -24,6 +28,18 @@ export default defineConfig({
         {
           text: "react",
           items: [],
+        },
+      ],
+      "/components/": [
+        {
+          text: "组件说明",
+          items: [
+            {
+              text: "按钮组件",
+              link: "/components/按钮组件",
+            },
+          ],
+          collapsible: true,
         },
       ],
     },
